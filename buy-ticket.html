@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Project4JSP.css">
+</head>
+<body>
+    <div class="grid-main">
+        <div class="submain">
+            <h1>Detail Ticket</h1><hr> <!--The main title of the content-->
+            <div class="grid-detail-event"> <!--Grid container for event details layout-->
+                <img src="image/BrunoMars.jpg" alt="">
+                <div class="deskripsi-event"> <!--Event description section-->
+                    <h3>Bruno Mars: Jakarta</h3>
+                    <p>Date: 13 & 14 September 2024</p>
+                    <p>Time: 17:00 - 23:00 WIB</p>
+                    <p>Location: Jakarta Internasional Stadium</p>
+                    <h3>Description</h3>
+                    <p> Tickets for both show will be available for purchase starting with the Mandiri 
+                        Presale on Thursday, 27 June 2024 from 10:00 WIB to Friday, 28 June 2024 at 
+                        23:59 WIB exclusively on Livin' by Mandiri via the Sukha feature.
+                    </p>
+                    <p> General sales will start on Saturday,
+                    </p>
+                    <h3>Terms & Conditions</h3> 
+                    <ul> <!--List of terms and conditions-->
+                        <li>The organizer is not responsible for lost E-Ticket</li>
+                        <li>It is prohibited to carry weapons, illegal drugs, dangerous 
+                            items and alcoholic beverages</li>
+                        <li>It is prohibited to bring professional cameras</li>
+                        <li>Tickets that have been purchased cannot be exchanged or returned 
+                            for any reason without exception and cannot be transferred or resold</li>
+                    </ul>
+                    <form method="post" action="about-us.jsp">
+                        <input type="hidden" name="action" value="submit">
+                        <div class="flex-pay">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="flex-pay">
+                            <p>Amount: </p>
+                            <p>Price: Rp. </p>
+                        </div>
+                        <div class="flex-pay">
+                            <label for="payment">Payment:</label>
+                            <input type="number" min="1" step="any" /><br>
+                            <button type="pay">Pay</button>
+                        </div>
+                        
+                    </form>
+                    <p>Change : Rp. </p>
+                    <button type="paynow">Pay Now</button>
+                </div>
+                <div class="flex-ticket">
+                    <div class="flex-subticket"> <!--Ticket details section-->
+                        <h3>CAT 1-7</h3>
+                        <p>Package</p><hr>
+                        <div class="flex-amount"> <!-- Container flex for prices and buy buttons-->
+                            <h3>Rp. 1.000.000 </h3>
+                            <input type="number" id="quantity" name="quantity" min="1" max="5">
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div class="right-main">
+            <h1>My Ticket</h1><hr>
+            <h2>Ticket Active</h2>
+            <div class="flex-cont"> <!--Containers flex to organize layouts-->
+                <div class="event">
+                    <img src="image/BrunoMars.jpg" alt="">
+                    <h4>Bruno Mars : Jakarta</h4> <!--Event name-->
+                    <p>13&14 Sep 2024</p>
+                    <p>Starting From Rp 150.000</p><hr>
+                    <p>Entertainment</p>
+                    <a href="detail_event.html">See Tickets</a>
+                </div>
+            </div>
+            <div style="text-align: center; padding-top: 50px; padding-bottom: 100px;">
+                <p><strong>Buy another ticket?</strong></p>
+                <p><a href="home.jsp">Look for events now</a></p>
+            </div>
+        </div>
+    </div>  image/DuaLipa.jpg  
+</body>
+</html>
+
+<div class="flex-TC"></div>
+<div class="ticket-category">
+    <form> <!--Ticket details section-->
+        <label for="nameTicket">Name Ticket</label>
+        <input type="text" id="nameTicket" name="nameTicket" required>
+    </form>
+    <form>	
+        <label for="include">Include</label>
+        <input type="text" id="include" name="include" required>
+    </form>
+    <form>
+        <label for="price">Price Ticket</label>
+        <input type="number" min="1" step="any" />
+    </form>
+</div>
+</div>
+.flex-TC {
+	grid-row: 3 / 4;
+    grid-column: 1 / 2; /* Spans the first column */
+	display: flex; /* Uses flexbox for layout */
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.ticket-category {
+	width: 720px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.ticket-category form {
+	width: 100%;
+	display: flex;
+	gap: 10px;
+	align-items: center;
+	
+}
+image/Coachella.jpeg
+image/WhenWeWereYoung.jpeg
+image/The Sound Project.jpeg
+image/BrunoMars.jpg
+image/ReallityClub.jpeg

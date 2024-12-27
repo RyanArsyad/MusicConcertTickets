@@ -1,0 +1,283 @@
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0; /* Removes default margin */
+    padding: 0; /* Removes default padding */
+    background-color: white; 
+}
+
+nav {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: space-between;
+    align-items: center;
+    background-color: #402B3A;
+}
+
+.nav-links {
+    display: flex; /* Uses flexbox for layout */
+    gap: 1rem; /* Sets the gap between items */
+}
+
+.nav-links li {
+    list-style: none; /* Removes default list styling */
+}
+
+.nav-links a, nav h1 {
+    text-decoration: none; /* Removes underline from links */
+    color: white; 
+    padding: 0.5rem 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline; /*Underlines text on hover*/
+    border-radius: 5px; /*Rounds the corners of the element*/
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto; /* Centers the main content */
+    padding: 20px; /* Adds padding inside the main content */
+}
+
+main h2 {
+    margin-top: 50px; 
+}
+
+main h1 {
+    color: white; 
+    background-image: url(image/BackgroundHom.png); 
+    background-size: cover; /* Scales the image to cover the entire area */
+    background-position: center; /* Centers the background image */
+    padding: 20px; 
+    border-radius: 5px; /* Rounds the corners of the element */
+    text-align: center; 
+}
+
+.content {
+    background-image: url(image/BackgroundHom.png); 
+    background-size: cover; /* Scales the image to cover the entire area */
+    background-position: center; /* Centers the background image */
+    height: 300px; 
+    display: flex; /* Uses flexbox for layout */
+    flex-direction: column; /* Arranges items in a column */
+    align-items: center; 
+    justify-content: center; 
+    color: white; 
+    text-shadow: 2px 2px 4px black; 
+    padding: 20px; 
+    border-radius: 10px; /* Rounds the corners of the element */
+}
+
+.content h1 {
+    font-size: 60px;
+    margin: 0; /* Removes default margin */
+}
+
+.content p {
+    font-size: 24px; 
+    margin: 10px 0 0; 
+}
+
+.flex-cont {
+    display: flex; /* Uses flexbox for layout */
+    flex-wrap: wrap; /*Allows items to wrap to the next line*/
+    justify-content: center; /* Centers items horizontally */
+    gap: 33px; 
+}
+
+.grid-featuring {
+    display: grid; /* Uses grid layout */
+    grid-template-rows: auto auto; /* Defines two rows of automatic height */
+}
+
+.featuring {
+    border-radius: 10px; /* Rounds the corners of the element */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; /* Hides overflow content */
+    width: 250px; 
+}
+
+.featuring img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* Ensures the image covers the entire area */
+}
+
+    .event {
+        background-color: white; 
+        border-radius: 10px; /* Rounds the corners of the element */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+        overflow: hidden; /* Hides overflow content */
+        width: 250px; 
+        height: 300px; 
+        text-align: left; 
+    }
+
+.event img {
+    width: 100%; /* Sets the image to full width of its container */
+    object-fit: cover; /* Ensures the image covers the entire area */
+}
+
+.event h4 {
+    margin: 5px; 
+}
+
+.event p {
+    margin: 5px; 
+}
+
+.event a {
+    margin: 5px; 
+    padding: 5px 20px; 
+    background-color: #B9296C; 
+    color: white; 
+    text-decoration: none; /* Removes underline from links */
+    border-radius: 5px; /* Rounds the corners of the element */
+}
+
+.event a:hover {
+    background-color: #D14385; /* Changes background color on hover */
+}
+
+.grid-detail-event {
+    display: grid; 
+    grid-template-columns: auto auto auto; /*Defines three columns of automatic width*/
+    grid-template-rows: auto auto auto auto auto; /*Defines five rows of automatic height*/
+    padding: 15px; 
+    gap: 15px; 
+}
+
+.grid-detail-event img {
+    grid-column: 1 / 2; /* Spans the first column */
+    width: 740px; 
+    border-radius: 10px; /* Rounds the corners of the image */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    overflow: hidden; /* Hides overflow content */
+}
+
+.deskripsi-event {
+    grid-row: 1 / 5; /* Spans rows */
+    grid-column: 2 / 3; /* Spans column */
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
+}
+
+.ticket1, .ticket2, .ticket3 {
+    grid-column: 1 / 2; /* Spans the first column */
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    padding: 10px; 
+}
+
+.flex-ticket {
+    display: flex; /* Uses flexbox for layout */
+    justify-content: space-between; /* Distributes items evenly with space between */
+    align-items: center; /* Centers items vertically */
+}
+
+.flex-ticket a {
+    padding-right: 2rem; 
+    text-decoration: none; 
+    background-color: #B9296C; 
+    padding: 5px 20px; 
+    color: white; 
+    border-radius: 5px; 
+}
+
+.flex-ticket a:hover {
+    background-color: #D14385; 
+}
+
+.reviews {
+    text-align: center; 
+}
+
+.flex-review {
+    display: flex; 
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Centers items horizontally */
+    gap: 20px; 
+}
+
+.flex-review div {
+    width: 300px; 
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+    align-items: center; 
+    border-radius: 10px; 
+}
+
+.grid-contact-us {
+    display: grid; 
+    grid-template-columns: 500px 550px; /* Defines two columns of fixed width */
+    justify-content: center; 
+    gap: 50px; 
+    margin-top: 30px; 
+}
+
+.form-group {
+    margin-bottom: 30px; 
+}
+
+label {
+    display: block; /* Displays the element as a block */
+    margin-bottom: 5px; 
+}
+
+input, textarea {
+    width: 100%; 
+    padding: 8px; 
+    border: 1px solid #ccc; 
+    box-sizing: border-box; 
+}
+
+button {
+    padding-right: 2rem; 
+    text-decoration: none; 
+    background-color: #B9296C; 
+    padding: 5px 20px; 
+    color: white; 
+    border-radius: 5px; 
+    cursor: pointer; 
+}
+
+button:hover {
+    background-color: #D14385; 
+}
+
+footer {
+    margin-top: 50px;
+    background-color: #343a40; 
+    color: white; 
+    align-items: center; 
+    text-align: center;
+    padding: 0.5rem; 
+}
+
+footer .logo {
+    display: flex; 
+    justify-content: center; 
+}
+
+footer h4 {
+    background-image: url(image/BackgroundHom.png); 
+    background-size: cover;
+    background-position: center; 
+    border-radius: 5px;
+    width: 100px; 
+    padding: 5px; 
+}
+
+footer.sosmed {
+    text-decoration: none; 
+}
+
+footer a {
+    text-decoration: none; 
+    color: white;
+    padding: 1rem; 
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
